@@ -1,0 +1,6 @@
+<div class="header">
+    <img (click)="navToHome()" class="logo"
+        src="https://picnic.app/careers/wp-content/uploads/sites/21/2021/01/img-logo@2x.svg">
+    <input *ngIf="picnicService.hideSearchBar" matInput type="text" placeholder="Search for a product"
+        [(ngModel)]="searchword" (input)="debounceData()">
+</div>

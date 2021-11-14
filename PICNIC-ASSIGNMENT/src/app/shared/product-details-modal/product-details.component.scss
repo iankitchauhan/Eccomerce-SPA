@@ -1,0 +1,20 @@
+.cdk-overlay-pane.my-dialog {
+    position: relative!important;
+  }
+  .close {
+    background: none;
+    border: 0;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+  }
+
+  .mat-dialog-title {
+    font-size: 24px;
+}
+
+
+.price{
+  font-size: 18px;
+    font-weight: bold;
+}

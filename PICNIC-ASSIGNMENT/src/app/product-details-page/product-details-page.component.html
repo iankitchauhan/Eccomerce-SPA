@@ -1,0 +1,11 @@
+<div class="container">
+    <ng-container *ngIf="productDetails">
+        <h2 mat-dialog-title>{{productDetails?.name}}</h2>
+        <mat-dialog-content><img style="
+        width: 100%;
+        " [src]="productDetails?.image">
+            <p class="price">$ {{productDetails?.price}}</p>
+            <p>{{productDetails?.description}}</p>
+        </mat-dialog-content>
+    </ng-container>
+</div>

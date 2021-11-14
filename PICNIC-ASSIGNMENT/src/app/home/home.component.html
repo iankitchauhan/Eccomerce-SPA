@@ -1,0 +1,14 @@
+<div class="container">
+    <ng-container *ngIf="productList.length;else noProductFound">
+        <ul class="content">
+            <li *ngFor="let product of productList" class="child" (click)="openDialog(product)">
+                <h2> {{product.name}}</h2>
+                <img [src]="product.image">
+                <p>$ {{product.price}}</p>
+            </li>
+        </ul>
+    </ng-container>
+    <ng-template #noProductFound>
+        <h2>No Results Found</h2>
+    </ng-template>
+</div>
